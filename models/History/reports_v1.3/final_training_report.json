@@ -1,0 +1,157 @@
+{
+  "model_version": "v1.3",
+  "timestamp": "2025-09-28T03:54:09.395331",
+  "rows": {
+    "total": 1056
+  },
+  "features": {
+    "total": 44,
+    "numeric": 43,
+    "categorical": 1,
+    "engineered": [
+      "FE_A_Total_Powder",
+      "FE_A_Total_Voltage",
+      "FE_B_Total_Powder",
+      "FE_B_Total_Voltage",
+      "FE_C_Total_Powder",
+      "FE_C_Total_Voltage",
+      "FE_D_Total_Powder",
+      "FE_D_Total_Voltage",
+      "FE_E_Total_Powder",
+      "FE_E_Total_Voltage",
+      "FE_F_Total_Powder",
+      "FE_F_Total_Voltage",
+      "FE_All_Total_Powder",
+      "FE_All_Total_Voltage",
+      "FE_Time_Index"
+    ]
+  },
+  "models": {
+    "xgb": {
+      "Thickness Point A": "..\\models\\xgb_Thickness_Point_A.joblib",
+      "Thickness Point B": "..\\models\\xgb_Thickness_Point_B.joblib",
+      "Thickness Point C": "..\\models\\xgb_Thickness_Point_C.joblib",
+      "Thickness Point D": "..\\models\\xgb_Thickness_Point_D.joblib",
+      "Thickness Point E": "..\\models\\xgb_Thickness_Point_E.joblib",
+      "Thickness Point F": "..\\models\\xgb_Thickness_Point_F.joblib",
+      "Thickness Point G": "..\\models\\xgb_Thickness_Point_G.joblib"
+    },
+    "lgb": {
+      "Thickness Point A": "..\\models\\lgb_Thickness_Point_A.joblib",
+      "Thickness Point B": "..\\models\\lgb_Thickness_Point_B.joblib",
+      "Thickness Point C": "..\\models\\lgb_Thickness_Point_C.joblib",
+      "Thickness Point D": "..\\models\\lgb_Thickness_Point_D.joblib",
+      "Thickness Point E": "..\\models\\lgb_Thickness_Point_E.joblib",
+      "Thickness Point F": "..\\models\\lgb_Thickness_Point_F.joblib",
+      "Thickness Point G": "..\\models\\lgb_Thickness_Point_G.joblib"
+    },
+    "catboost": {
+      "Thickness Point A": "..\\models\\cb_Thickness_Point_A.joblib",
+      "Thickness Point B": "..\\models\\cb_Thickness_Point_B.joblib",
+      "Thickness Point C": "..\\models\\cb_Thickness_Point_C.joblib",
+      "Thickness Point D": "..\\models\\cb_Thickness_Point_D.joblib",
+      "Thickness Point E": "..\\models\\cb_Thickness_Point_E.joblib",
+      "Thickness Point F": "..\\models\\cb_Thickness_Point_F.joblib",
+      "Thickness Point G": "..\\models\\cb_Thickness_Point_G.joblib"
+    }
+  },
+  "metrics": {
+    "Thickness Point A": {
+      "xgb_RMSE": 10.49650401127827,
+      "xgb_MAE": 8.415745976286114,
+      "lgb_RMSE": 10.849997722260236,
+      "lgb_MAE": 8.383828310597883,
+      "cb_RMSE": 10.50381579718071,
+      "cb_MAE": 8.371852568534857
+    },
+    "Thickness Point B": {
+      "xgb_RMSE": 12.441543449461143,
+      "xgb_MAE": 8.704316970537295,
+      "lgb_RMSE": 13.122334489946253,
+      "lgb_MAE": 9.297283433806417,
+      "cb_RMSE": 12.432099776963094,
+      "cb_MAE": 8.760819731145851
+    },
+    "Thickness Point C": {
+      "xgb_RMSE": 16.623792588712824,
+      "xgb_MAE": 11.958069711361292,
+      "lgb_RMSE": 16.765966929392132,
+      "lgb_MAE": 11.95113751915215,
+      "cb_RMSE": 16.611335877672396,
+      "cb_MAE": 11.859739473154969
+    },
+    "Thickness Point D": {
+      "xgb_RMSE": 7.464095692688689,
+      "xgb_MAE": 5.9334382830925705,
+      "lgb_RMSE": 7.483441551030741,
+      "lgb_MAE": 5.830875404328864,
+      "cb_RMSE": 7.2652164271053445,
+      "cb_MAE": 5.56860631656968
+    },
+    "Thickness Point E": {
+      "xgb_RMSE": 10.006910273750362,
+      "xgb_MAE": 8.263529248507519,
+      "lgb_RMSE": 9.856131545634488,
+      "lgb_MAE": 8.072353353823763,
+      "cb_RMSE": 9.87168939800608,
+      "cb_MAE": 8.139114109147423
+    },
+    "Thickness Point F": {
+      "xgb_RMSE": 12.840922089749629,
+      "xgb_MAE": 10.41238233458321,
+      "lgb_RMSE": 12.791434778156509,
+      "lgb_MAE": 10.375778949696603,
+      "cb_RMSE": 12.986727532168514,
+      "cb_MAE": 10.555302619653123
+    },
+    "Thickness Point G": {
+      "xgb_RMSE": 14.123777840188286,
+      "xgb_MAE": 11.583414128141582,
+      "lgb_RMSE": 14.121237238211334,
+      "lgb_MAE": 11.600103549686484,
+      "cb_RMSE": 14.069889768477388,
+      "cb_MAE": 11.56486926679327
+    }
+  },
+  "stacking_metrics": {
+    "Thickness Point A": {
+      "stack_RMSE": 10.215646175371285,
+      "stack_MAE": 8.18402977940857,
+      "n_val": 106
+    },
+    "Thickness Point B": {
+      "stack_RMSE": 12.763542823661911,
+      "stack_MAE": 8.953465882859106,
+      "n_val": 106
+    },
+    "Thickness Point C": {
+      "stack_RMSE": 16.523890216598307,
+      "stack_MAE": 12.05274604401159,
+      "n_val": 106
+    },
+    "Thickness Point D": {
+      "stack_RMSE": 7.216324087760891,
+      "stack_MAE": 5.438482567590873,
+      "n_val": 106
+    },
+    "Thickness Point E": {
+      "stack_RMSE": 9.688658629120402,
+      "stack_MAE": 7.890094315873921,
+      "n_val": 106
+    },
+    "Thickness Point F": {
+      "stack_RMSE": 12.031350179243177,
+      "stack_MAE": 9.651435403935865,
+      "n_val": 106
+    },
+    "Thickness Point G": {
+      "stack_RMSE": 14.10636240079784,
+      "stack_MAE": 11.58779628880825,
+      "n_val": 106
+    }
+  },
+  "notes": {
+    "optuna_best_algo": null,
+    "optuna_params": null
+  }
+}

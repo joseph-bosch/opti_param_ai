@@ -1,0 +1,142 @@
+{
+  "algos": [
+    "nn",
+    "lgb",
+    "cat",
+    "xgb"
+  ],
+  "features": [
+    "Rec_A_Gun1_Powder",
+    "Rec_B_Gun1_Powder",
+    "Rec_C_Gun1_Powder",
+    "Rec_C_Gun2_Powder",
+    "Rec_D_Gun1_Powder",
+    "Rec_D_Gun2_Powder",
+    "Rec_E_Gun1_Powder",
+    "Rec_F_Gun1_Powder",
+    "Rec_A_Gun1_Voltage",
+    "Rec_B_Gun1_Voltage",
+    "Rec_C_Gun1_Voltage",
+    "Rec_C_Gun2_Voltage",
+    "Rec_D_Gun1_Voltage",
+    "Rec_D_Gun2_Voltage",
+    "Rec_E_Gun1_Voltage",
+    "Rec_F_Gun1_Voltage",
+    "Rec_A_Axis-Z_Upper_Point",
+    "Rec_B_Axis-Z_Upper_Point",
+    "Rec_C_Axis-Z_Upper_Point",
+    "Rec_D_Axis-Z_Upper_Point",
+    "Rec_E_Axis-Z_Upper_Point",
+    "Rec_F_Axis-Z_Upper_Point",
+    "Rec_A_Axis-X_Upper_Point",
+    "Rec_B_Axis-X_Upper_Point",
+    "Rec_C_Axis-X_Upper_Point",
+    "Rec_D_Axis-X_Upper_Point",
+    "Rec_E_Axis-X_Upper_Point",
+    "Rec_F_Axis-X_Upper_Point",
+    "Rec_A_Axis-Z_Lower_Point",
+    "Rec_B_Axis-Z_Lower_Point",
+    "Rec_C_Axis-Z_Lower_Point",
+    "Rec_D_Axis-Z_Lower_Point",
+    "Rec_E_Axis-Z_Lower_Point",
+    "Rec_F_Axis-Z_Lower_Point",
+    "FE_Time_Index",
+    "Rec_C_Axis-Z_Speed",
+    "Rec_E_Axis-Z_Speed",
+    "Temperature",
+    "Valve_Filter_Status",
+    "FE_All_Total_Powder",
+    "Rec_B_Axis-Z_Speed",
+    "Rec_A_Axis-Z_Speed",
+    "FE_C_Total_Voltage",
+    "FE_D_Total_Voltage",
+    "FE_All_Total_Voltage",
+    "Humidity",
+    "Rec_C_Gun1_onoff_before_after_obj",
+    "Rec_A_Axis-Z_Spray_Dist",
+    "Type"
+  ],
+  "numeric_cols": [
+    "Rec_A_Gun1_Powder",
+    "Rec_B_Gun1_Powder",
+    "Rec_C_Gun1_Powder",
+    "Rec_C_Gun2_Powder",
+    "Rec_D_Gun1_Powder",
+    "Rec_D_Gun2_Powder",
+    "Rec_E_Gun1_Powder",
+    "Rec_F_Gun1_Powder",
+    "Rec_A_Gun1_Voltage",
+    "Rec_B_Gun1_Voltage",
+    "Rec_C_Gun1_Voltage",
+    "Rec_C_Gun2_Voltage",
+    "Rec_D_Gun1_Voltage",
+    "Rec_D_Gun2_Voltage",
+    "Rec_E_Gun1_Voltage",
+    "Rec_F_Gun1_Voltage",
+    "Rec_A_Axis-Z_Upper_Point",
+    "Rec_B_Axis-Z_Upper_Point",
+    "Rec_C_Axis-Z_Upper_Point",
+    "Rec_D_Axis-Z_Upper_Point",
+    "Rec_E_Axis-Z_Upper_Point",
+    "Rec_F_Axis-Z_Upper_Point",
+    "Rec_A_Axis-X_Upper_Point",
+    "Rec_B_Axis-X_Upper_Point",
+    "Rec_C_Axis-X_Upper_Point",
+    "Rec_D_Axis-X_Upper_Point",
+    "Rec_E_Axis-X_Upper_Point",
+    "Rec_F_Axis-X_Upper_Point",
+    "Rec_A_Axis-Z_Lower_Point",
+    "Rec_B_Axis-Z_Lower_Point",
+    "Rec_C_Axis-Z_Lower_Point",
+    "Rec_D_Axis-Z_Lower_Point",
+    "Rec_E_Axis-Z_Lower_Point",
+    "Rec_F_Axis-Z_Lower_Point",
+    "FE_Time_Index",
+    "Rec_C_Axis-Z_Speed",
+    "Rec_E_Axis-Z_Speed",
+    "Temperature",
+    "Valve_Filter_Status",
+    "FE_All_Total_Powder",
+    "Rec_B_Axis-Z_Speed",
+    "Rec_A_Axis-Z_Speed",
+    "FE_C_Total_Voltage",
+    "FE_D_Total_Voltage",
+    "FE_All_Total_Voltage",
+    "Humidity",
+    "Rec_C_Gun1_onoff_before_after_obj",
+    "Rec_A_Axis-Z_Spray_Dist"
+  ],
+  "categorical_cols": [
+    "Type"
+  ],
+  "meta_selection": {
+    "Thickness Point A": {
+      "ridge": 11.34121429008316,
+      "elasticnetcv": 11.959546950729552
+    },
+    "Thickness Point B": {
+      "ridge": 12.942930232640043,
+      "elasticnetcv": 12.974224294650625
+    },
+    "Thickness Point C": {
+      "ridge": 16.247741713057504,
+      "elasticnetcv": 16.27129384481198
+    },
+    "Thickness Point D": {
+      "ridge": 8.383978065830641,
+      "elasticnetcv": 8.638985522649747
+    },
+    "Thickness Point E": {
+      "ridge": 12.43405723749944,
+      "elasticnetcv": 12.565374753995222
+    },
+    "Thickness Point F": {
+      "ridge": 11.450105757700754,
+      "elasticnetcv": 11.63985188023183
+    },
+    "Thickness Point G": {
+      "ridge": 15.2641528739809,
+      "elasticnetcv": 15.336705338723192
+    }
+  }
+}

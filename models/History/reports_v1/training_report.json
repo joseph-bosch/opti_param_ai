@@ -1,0 +1,82 @@
+{
+  "model_version": "v1",
+  "type_filter": null,
+  "rows": {
+    "train": 420,
+    "valid": 105,
+    "total": 525
+  },
+  "features": {
+    "total": 112,
+    "numeric": 111,
+    "categorical": 1
+  },
+  "metrics": {
+    "Thickness Point A": {
+      "MAE": 8.285225931803387,
+      "RMSE": 10.092044695444475,
+      "n_val": 105
+    },
+    "Thickness Point B": {
+      "MAE": 8.259569280715215,
+      "RMSE": 11.54960034212025,
+      "n_val": 105
+    },
+    "Thickness Point C": {
+      "MAE": 16.033607482910156,
+      "RMSE": 20.335924828676003,
+      "n_val": 105
+    },
+    "Thickness Point D": {
+      "MAE": 9.206444367908297,
+      "RMSE": 11.773002133523548,
+      "n_val": 105
+    },
+    "Thickness Point E": {
+      "MAE": 9.865351707821802,
+      "RMSE": 12.707949332260615,
+      "n_val": 105
+    },
+    "Thickness Point F": {
+      "MAE": 11.260373389834447,
+      "RMSE": 15.074399167324584,
+      "n_val": 105
+    },
+    "Thickness Point G": {
+      "MAE": 11.795402061825706,
+      "RMSE": 14.298374718081408,
+      "n_val": 105
+    }
+  },
+  "weighted_nrmse": {
+    "value": 0.43023344711180994,
+    "per_point": {
+      "A": 0.28284878630730026,
+      "B": 0.39204346035710275,
+      "C": 0.4420853223625218,
+      "D": 0.5118696579792846,
+      "E": 0.3827695582006209,
+      "F": 0.4258304849526716,
+      "G": 0.40736110307924245
+    },
+    "accept_threshold": 0.15,
+    "accepted": false
+  },
+  "tuning": {
+    "used": false
+  },
+  "artifacts": {
+    "preprocessor": "..\\models\\preprocessor.joblib",
+    "models": [
+      "xgb_A.joblib",
+      "xgb_B.joblib",
+      "xgb_C.joblib",
+      "xgb_D.joblib",
+      "xgb_E.joblib",
+      "xgb_F.joblib",
+      "xgb_G.joblib"
+    ],
+    "feature_info": "..\\models\\feature_info.json",
+    "reports_dir": "..\\models\\reports_v1"
+  }
+}

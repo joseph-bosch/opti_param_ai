@@ -1,0 +1,17 @@
+pandas
+numpy
+scikit-learn
+xgboost
+sqlalchemy
+pyodbc
+joblib
+tqdm
+scipy
+python-dateutil
+python-dotenv
+openpyxl
+matplotlib
+seaborn
+optuna
+catboost
+dice-ml

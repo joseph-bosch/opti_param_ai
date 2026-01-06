@@ -1,0 +1,97 @@
+{
+  "model_version": "v1.2.2",
+  "type_filter": null,
+  "rows": {
+    "total": 525
+  },
+  "features": {
+    "total": 42,
+    "numeric": 41,
+    "categorical": 1
+  },
+  "metrics": {
+    "Thickness Point A": {
+      "RMSE": 24.838407419059298,
+      "MAE": 9.985319154074476,
+      "n_val": 131
+    },
+    "Thickness Point B": {
+      "RMSE": 26.795091203149866,
+      "MAE": 10.599784307504125,
+      "n_val": 131
+    },
+    "Thickness Point C": {
+      "RMSE": 17.543052426585405,
+      "MAE": 12.595346150871451,
+      "n_val": 131
+    },
+    "Thickness Point D": {
+      "RMSE": 9.011066585596254,
+      "MAE": 7.095004284108867,
+      "n_val": 131
+    },
+    "Thickness Point E": {
+      "RMSE": 10.798864790863163,
+      "MAE": 8.662513604782921,
+      "n_val": 131
+    },
+    "Thickness Point F": {
+      "RMSE": 12.447869582482673,
+      "MAE": 9.747781263356293,
+      "n_val": 131
+    },
+    "Thickness Point G": {
+      "RMSE": 45.11887234192404,
+      "MAE": 15.408300820076436,
+      "n_val": 131
+    }
+  },
+  "weighted_nrmse": {
+    "value": 0.6215356085180513,
+    "per_point": {
+      "A": 0.6961437056911238,
+      "B": 0.9095414529242993,
+      "C": 0.3813707049257697,
+      "D": 0.3917855037215762,
+      "E": 0.32526701177298684,
+      "F": 0.3516347339684369,
+      "G": 1.2854379584593745
+    },
+    "accept_threshold": 0.15,
+    "accepted": false
+  },
+  "cv": {
+    "used": true,
+    "method": "timeseries",
+    "n_splits": 3
+  },
+  "tuning": {
+    "used": false
+  },
+  "notes": {
+    "feature_pruning": {
+      "drop_near_constant": true,
+      "corr_drop_thr": 1.0,
+      "select_top_numeric": 999,
+      "always_keep_patterns": [
+        "Axis-X_Upper_Point",
+        "Axis-Z_Upper_Point",
+        "Axis-Z_Lower_Point",
+        "Gun1_Voltage",
+        "Gun2_Voltage",
+        "Gun1_Powder",
+        "Gun2_Powder"
+      ]
+    },
+    "monotonic_constraints": {
+      "used": false,
+      "pos_keywords": [
+        "Voltage",
+        "Powder"
+      ],
+      "neg_keywords": [
+        "Speed"
+      ]
+    }
+  }
+}

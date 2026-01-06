@@ -1,0 +1,389 @@
+{
+  "model_version": "v1.2.62",
+  "type_filter": null,
+  "rows": {
+    "total": 1056
+  },
+  "features": {
+    "total": 47,
+    "numeric": 46,
+    "categorical": 1
+  },
+  "metrics": {
+    "Thickness Point A": {
+      "RMSE": 11.395543587226404,
+      "MAE": 8.98364043380275,
+      "n_val": 264
+    },
+    "Thickness Point B": {
+      "RMSE": 13.879388543169862,
+      "MAE": 10.120368394562695,
+      "n_val": 264
+    },
+    "Thickness Point C": {
+      "RMSE": 18.209693510053473,
+      "MAE": 13.46654102518101,
+      "n_val": 264
+    },
+    "Thickness Point D": {
+      "RMSE": 11.173445122677977,
+      "MAE": 9.073084272519507,
+      "n_val": 264
+    },
+    "Thickness Point E": {
+      "RMSE": 13.774989513923492,
+      "MAE": 11.105657695038149,
+      "n_val": 264
+    },
+    "Thickness Point F": {
+      "RMSE": 12.826522105341697,
+      "MAE": 10.14604785996254,
+      "n_val": 264
+    },
+    "Thickness Point G": {
+      "RMSE": 16.69631774719561,
+      "MAE": 13.30559327481973,
+      "n_val": 264
+    }
+  },
+  "weighted_nrmse": {
+    "value": 0.3957995738537606,
+    "per_point": {
+      "A": 0.3566680308991051,
+      "B": 0.42058753161120793,
+      "C": 0.38295885404949476,
+      "D": 0.42974788933376834,
+      "E": 0.3826385976089859,
+      "F": 0.37504450600414335,
+      "G": 0.42056215987898266
+    },
+    "accept_threshold": 0.15,
+    "accepted": false
+  },
+  "cv": {
+    "used": true,
+    "method": "timeseries",
+    "n_splits": 3,
+    "gap": 4,
+    "folds": [
+      {
+        "fold": 1,
+        "info": {
+          "train_rows": 260,
+          "valid_rows": 264,
+          "train_start": "2025-06-13 00:00:00",
+          "train_end": "2025-07-28 00:00:00",
+          "valid_start": "2025-07-28 00:00:00",
+          "valid_end": "2025-08-18 00:00:00",
+          "gap": 4
+        },
+        "weighted_nrmse_model": 0.3709253126059393,
+        "weighted_nrmse_baseline": 0.379415269103345,
+        "per_point_nrmse_model": {
+          "A": 0.37674715065766107,
+          "B": 0.3304221412812788,
+          "C": 0.37831219793019194,
+          "D": 0.37284881888006766,
+          "E": 0.30011683964043656,
+          "F": 0.39546248946345186,
+          "G": 0.44919080758856883
+        },
+        "per_point_nrmse_baseline": {
+          "A": 0.5079620613388284,
+          "B": 0.37053954174118425,
+          "C": 0.38511138885482726,
+          "D": 0.3349320635285418,
+          "E": 0.3369513334766421,
+          "F": 0.347366595613505,
+          "G": 0.3736798206920221
+        },
+        "catboost_fold_metrics": {
+          "Thickness Point A": {
+            "MAE": 9.870411678276565,
+            "RMSE": 13.312076438920663,
+            "n_val": 264
+          },
+          "Thickness Point B": {
+            "MAE": 7.372285171981411,
+            "RMSE": 11.001298184208384,
+            "n_val": 264
+          },
+          "Thickness Point C": {
+            "MAE": 13.911586133883958,
+            "RMSE": 17.548110038581207,
+            "n_val": 264
+          },
+          "Thickness Point D": {
+            "MAE": 6.609505029463283,
+            "RMSE": 8.636019996046567,
+            "n_val": 264
+          },
+          "Thickness Point E": {
+            "MAE": 8.869768489931142,
+            "RMSE": 10.930239534887347,
+            "n_val": 264
+          },
+          "Thickness Point F": {
+            "MAE": 9.451197324345102,
+            "RMSE": 12.15640524844502,
+            "n_val": 264
+          },
+          "Thickness Point G": {
+            "MAE": 11.783952814045534,
+            "RMSE": 15.222922375762064,
+            "n_val": 264
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "info": {
+          "train_rows": 524,
+          "valid_rows": 264,
+          "train_start": "2025-06-13 00:00:00",
+          "train_end": "2025-08-15 00:00:00",
+          "valid_start": "2025-08-18 00:00:00",
+          "valid_end": "2025-08-27 00:00:00",
+          "gap": 4
+        },
+        "weighted_nrmse_model": 0.43752868536019396,
+        "weighted_nrmse_baseline": 0.4896367199762157,
+        "per_point_nrmse_model": {
+          "A": 0.3401653717495675,
+          "B": 0.49225527083679793,
+          "C": 0.38951626537871864,
+          "D": 0.5358630531976114,
+          "E": 0.5018278526612889,
+          "F": 0.35240820849643734,
+          "G": 0.44932194210191007
+        },
+        "per_point_nrmse_baseline": {
+          "A": 0.3808624660222434,
+          "B": 0.54456689200613,
+          "C": 0.5002630569090079,
+          "D": 0.613149715051681,
+          "E": 0.5239343709168719,
+          "F": 0.3671281609813723,
+          "G": 0.48444107615366255
+        },
+        "catboost_fold_metrics": {
+          "Thickness Point A": {
+            "MAE": 8.54542569429122,
+            "RMSE": 10.855950869667485,
+            "n_val": 264
+          },
+          "Thickness Point B": {
+            "MAE": 10.423641936889064,
+            "RMSE": 15.684786538263612,
+            "n_val": 264
+          },
+          "Thickness Point C": {
+            "MAE": 13.306764129324925,
+            "RMSE": 19.57054482648613,
+            "n_val": 264
+          },
+          "Thickness Point D": {
+            "MAE": 10.804169723725368,
+            "RMSE": 13.25024477048497,
+            "n_val": 264
+          },
+          "Thickness Point E": {
+            "MAE": 13.956774685425628,
+            "RMSE": 17.382599195440143,
+            "n_val": 264
+          },
+          "Thickness Point F": {
+            "MAE": 9.296961576771519,
+            "RMSE": 11.766031698193563,
+            "n_val": 264
+          },
+          "Thickness Point G": {
+            "MAE": 14.38399354174288,
+            "RMSE": 17.912099452857074,
+            "n_val": 264
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "info": {
+          "train_rows": 788,
+          "valid_rows": 264,
+          "train_start": "2025-06-13 00:00:00",
+          "train_end": "2025-08-27 00:00:00",
+          "valid_start": "2025-08-27 00:00:00",
+          "valid_end": "2025-09-05 00:00:00",
+          "gap": 4
+        },
+        "weighted_nrmse_model": 0.37894472359514864,
+        "weighted_nrmse_baseline": 0.38032315347498447,
+        "per_point_nrmse_model": {
+          "A": 0.3530915702900868,
+          "B": 0.43908518271554703,
+          "C": 0.38104809883957363,
+          "D": 0.3805317959236261,
+          "E": 0.34597110052523206,
+          "F": 0.3772628200525408,
+          "G": 0.363173729946469
+        },
+        "per_point_nrmse_baseline": {
+          "A": 0.37959744778320803,
+          "B": 0.4779712060670614,
+          "C": 0.41647482272588593,
+          "D": 0.28939243733457226,
+          "E": 0.29494222502974954,
+          "F": 0.3600818940698105,
+          "G": 0.41704209694600847
+        },
+        "catboost_fold_metrics": {
+          "Thickness Point A": {
+            "MAE": 8.730034711880707,
+            "RMSE": 10.785582689684244,
+            "n_val": 264
+          },
+          "Thickness Point B": {
+            "MAE": 10.074552497533363,
+            "RMSE": 13.81589382528768,
+            "n_val": 264
+          },
+          "Thickness Point C": {
+            "MAE": 13.007384410796703,
+            "RMSE": 17.63185516928682,
+            "n_val": 264
+          },
+          "Thickness Point D": {
+            "MAE": 6.641874134211214,
+            "RMSE": 8.02994715090994,
+            "n_val": 264
+          },
+          "Thickness Point E": {
+            "MAE": 10.037917249147295,
+            "RMSE": 11.8193003546018,
+            "n_val": 264
+          },
+          "Thickness Point F": {
+            "MAE": 9.990252919919136,
+            "RMSE": 12.373122673667229,
+            "n_val": 264
+          },
+          "Thickness Point G": {
+            "MAE": 12.07342340216427,
+            "RMSE": 14.697055655092422,
+            "n_val": 264
+          }
+        }
+      }
+    ]
+  },
+  "baseline": {
+    "weighted_nrmse_mean": 0.41645838085151504,
+    "model_minus_baseline": -0.020658806997754464
+  },
+  "tuning": {
+    "used": false
+  },
+  "catboost": {
+    "used": true,
+    "metrics": {
+      "Thickness Point A": {
+        "MAE": 8.28723639334802,
+        "RMSE": 10.398724935207648,
+        "n_val": 106
+      },
+      "Thickness Point B": {
+        "MAE": 8.878497289835572,
+        "RMSE": 12.540008198764635,
+        "n_val": 106
+      },
+      "Thickness Point C": {
+        "MAE": 11.927231389146836,
+        "RMSE": 16.670283764945907,
+        "n_val": 106
+      },
+      "Thickness Point D": {
+        "MAE": 5.626552640618388,
+        "RMSE": 7.335872931885857,
+        "n_val": 106
+      },
+      "Thickness Point E": {
+        "MAE": 8.584896970044966,
+        "RMSE": 10.317740082398426,
+        "n_val": 106
+      },
+      "Thickness Point F": {
+        "MAE": 10.565868064000844,
+        "RMSE": 13.001826040736875,
+        "n_val": 106
+      },
+      "Thickness Point G": {
+        "MAE": 11.595517145822004,
+        "RMSE": 14.112416818212107,
+        "n_val": 106
+      }
+    },
+    "note": null
+  },
+  "notes": {
+    "feature_pruning": {
+      "drop_constants": true,
+      "corr_drop_thr": 0.995,
+      "select_top_numeric": 999,
+      "always_keep_patterns": [
+        "Axis-X_Upper_Point",
+        "Axis-Z_Upper_Point",
+        "Axis-Z_Lower_Point",
+        "Gun1_Voltage",
+        "Gun2_Voltage",
+        "Gun1_Powder",
+        "Gun2_Powder",
+        "Time_Index"
+      ]
+    },
+    "monotonic_constraints": {
+      "used": false,
+      "pos_keywords": [
+        "Voltage",
+        "Powder",
+        "total_powder",
+        "total_voltage",
+        "exposure"
+      ],
+      "neg_keywords": [
+        "Speed"
+      ]
+    },
+    "winsorization": {
+      "qlow": 0.02,
+      "qhi": 0.98
+    },
+    "engineered": {
+      "used": true,
+      "created": [
+        "FE_A_Total_Powder",
+        "FE_A_Total_Voltage",
+        "FE_A_Exposure_Log",
+        "FE_B_Total_Powder",
+        "FE_B_Total_Voltage",
+        "FE_B_Exposure_Log",
+        "FE_C_Total_Powder",
+        "FE_C_Total_Voltage",
+        "FE_C_Exposure_Log",
+        "FE_D_Total_Powder",
+        "FE_D_Total_Voltage",
+        "FE_D_Exposure_Log",
+        "FE_E_Total_Powder",
+        "FE_E_Total_Voltage",
+        "FE_E_Exposure_Log",
+        "FE_F_Total_Powder",
+        "FE_F_Total_Voltage",
+        "FE_F_Exposure_Log",
+        "FE_All_Total_Powder",
+        "FE_All_Total_Voltage",
+        "FE_All_Exposure_Index",
+        "FE_Time_Index"
+      ],
+      "use_time_index": true
+    },
+    "objective": "reg:squarederror"
+  }
+}

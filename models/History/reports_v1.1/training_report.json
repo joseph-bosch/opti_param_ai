@@ -1,0 +1,68 @@
+{
+  "model_version": "v1.1",
+  "type_filter": null,
+  "rows": {
+    "train": 420,
+    "valid": 105,
+    "total": 525
+  },
+  "features": {
+    "total": 112,
+    "numeric": 111,
+    "categorical": 1
+  },
+  "metrics": {
+    "Thickness Point A": {
+      "MAE": 8.399930812290737,
+      "RMSE": 10.275897151854332,
+      "n_val": 105
+    },
+    "Thickness Point B": {
+      "MAE": 7.835561174665179,
+      "RMSE": 11.334392236273695,
+      "n_val": 105
+    },
+    "Thickness Point C": {
+      "MAE": 14.797512497674854,
+      "RMSE": 19.387347457590117,
+      "n_val": 105
+    },
+    "Thickness Point D": {
+      "MAE": 9.004933093843006,
+      "RMSE": 11.52750683418458,
+      "n_val": 105
+    },
+    "Thickness Point E": {
+      "MAE": 9.851050516764325,
+      "RMSE": 12.653209034849025,
+      "n_val": 105
+    },
+    "Thickness Point F": {
+      "MAE": 11.358729858398437,
+      "RMSE": 15.182556954896166,
+      "n_val": 105
+    },
+    "Thickness Point G": {
+      "MAE": 11.638748953683036,
+      "RMSE": 14.138141974030827,
+      "n_val": 105
+    }
+  },
+  "weighted_nrmse": {
+    "value": 0.40127609335428266,
+    "per_point": {
+      "A": 0.2880016017896393,
+      "B": 0.3847383651145177,
+      "C": 0.42146407516500256,
+      "D": 0.501195949312373,
+      "E": 0.3811207540617176,
+      "F": 0.4288857896863321,
+      "G": 0.40279606763620596
+    },
+    "accept_threshold": 0.15,
+    "accepted": false
+  },
+  "tuning": {
+    "used": false
+  }
+}

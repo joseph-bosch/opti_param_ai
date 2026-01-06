@@ -1,0 +1,305 @@
+{
+  "model_name": "catboost_multi",
+  "model_version": "cb_v0.1",
+  "rows": {
+    "total": 1056
+  },
+  "features": {
+    "total": 44,
+    "numeric": 43,
+    "categorical": 1
+  },
+  "metrics": {
+    "Thickness Point A": {
+      "RMSE": 11.435368186082883,
+      "MAE": 8.931286274481236,
+      "n_val": 264
+    },
+    "Thickness Point B": {
+      "RMSE": 13.262245147242732,
+      "MAE": 9.143180385539145,
+      "n_val": 264
+    },
+    "Thickness Point C": {
+      "RMSE": 18.283548443713496,
+      "MAE": 13.48185150524268,
+      "n_val": 264
+    },
+    "Thickness Point D": {
+      "RMSE": 9.679100140579868,
+      "MAE": 7.767137352973056,
+      "n_val": 264
+    },
+    "Thickness Point E": {
+      "RMSE": 13.36216062489441,
+      "MAE": 10.93861591051315,
+      "n_val": 264
+    },
+    "Thickness Point F": {
+      "RMSE": 11.883112919627338,
+      "MAE": 9.418690548573883,
+      "n_val": 264
+    },
+    "Thickness Point G": {
+      "RMSE": 15.886654062236248,
+      "MAE": 12.707825928504453,
+      "n_val": 264
+    }
+  },
+  "weighted_nrmse": {
+    "value_dynamic_specs": 0.3773869851887269,
+    "value_fixed_specs": 0.39855017749855587,
+    "accept_threshold": 0.15,
+    "accepted_dynamic": false,
+    "accepted_fixed": false
+  },
+  "cv": {
+    "used": true,
+    "method": "timeseries",
+    "n_splits": 3,
+    "gap": 4,
+    "folds": [
+      {
+        "fold": 1,
+        "info": {
+          "fold": 1,
+          "train_rows": 260,
+          "valid_rows": 264,
+          "train_start": "2025-06-13 00:00:00",
+          "train_end": "2025-07-28 00:00:00",
+          "valid_start": "2025-07-28 00:00:00",
+          "valid_end": "2025-08-18 00:00:00",
+          "gap": 4
+        },
+        "weighted_nrmse_model_dynamic": 0.3559467452758421,
+        "weighted_nrmse_baseline_dynamic": 0.379415269103345,
+        "weighted_nrmse_model_fixed": 0.3729874845630107,
+        "weighted_nrmse_baseline_fixed": 0.3963343257821753,
+        "per_point_nrmse_model_dynamic": {
+          "A": 0.42056302570211296,
+          "B": 0.3321423362961454,
+          "C": 0.3705751983845838,
+          "D": 0.32925192748789606,
+          "E": 0.3060347786486841,
+          "F": 0.35087322837608576,
+          "G": 0.3840219132095777
+        },
+        "per_point_nrmse_baseline_dynamic": {
+          "A": 0.5079620613388284,
+          "B": 0.37053954174118425,
+          "C": 0.38511138885482726,
+          "D": 0.3349320635285418,
+          "E": 0.3369513334766421,
+          "F": 0.347366595613505,
+          "G": 0.3736798206920221
+        },
+        "per_point_nrmse_model_fixed": {
+          "A": 0.37659721612058583,
+          "B": 0.37205353352928705,
+          "C": 0.3830619713736295,
+          "D": 0.37219783107327375,
+          "E": 0.3318449407033924,
+          "F": 0.33897922063452324,
+          "G": 0.4343495713510039
+        },
+        "per_point_nrmse_baseline_fixed": {
+          "A": 0.4548595252179248,
+          "B": 0.4150646597915505,
+          "C": 0.3980879682618921,
+          "D": 0.378618854423569,
+          "E": 0.3653689158180456,
+          "F": 0.33559145677914864,
+          "G": 0.42265210488527866
+        }
+      },
+      {
+        "fold": 2,
+        "info": {
+          "fold": 2,
+          "train_rows": 524,
+          "valid_rows": 264,
+          "train_start": "2025-06-13 00:00:00",
+          "train_end": "2025-08-15 00:00:00",
+          "valid_start": "2025-08-18 00:00:00",
+          "valid_end": "2025-08-27 00:00:00",
+          "gap": 4
+        },
+        "weighted_nrmse_model_dynamic": 0.42361777991865934,
+        "weighted_nrmse_baseline_dynamic": 0.4896367199762157,
+        "weighted_nrmse_model_fixed": 0.4506661848915513,
+        "weighted_nrmse_baseline_fixed": 0.521277652773865,
+        "per_point_nrmse_model_dynamic": {
+          "A": 0.329789451315023,
+          "B": 0.4642971050832529,
+          "C": 0.41162210392725296,
+          "D": 0.4864489970577099,
+          "E": 0.47934552382869583,
+          "F": 0.3402025774495589,
+          "G": 0.4478819709344846
+        },
+        "per_point_nrmse_baseline_dynamic": {
+          "A": 0.3808624660222434,
+          "B": 0.54456689200613,
+          "C": 0.5002630569090079,
+          "D": 0.613149715051681,
+          "E": 0.5239343709168719,
+          "F": 0.3671281609813723,
+          "G": 0.48444107615366255
+        },
+        "per_point_nrmse_model_fixed": {
+          "A": 0.2953131437644333,
+          "B": 0.5200884069160673,
+          "C": 0.4254919791682799,
+          "D": 0.5498988662391503,
+          "E": 0.5197722547540075,
+          "F": 0.32867028668855663,
+          "G": 0.5065787534501152
+        },
+        "per_point_nrmse_baseline_fixed": {
+          "A": 0.34104696719200306,
+          "B": 0.6100036468500436,
+          "C": 0.5171197468700722,
+          "D": 0.6931257648410307,
+          "E": 0.5681216070182948,
+          "F": 0.35468313857522377,
+          "G": 0.547929080435909
+        }
+      },
+      {
+        "fold": 3,
+        "info": {
+          "fold": 3,
+          "train_rows": 788,
+          "valid_rows": 264,
+          "train_start": "2025-06-13 00:00:00",
+          "train_end": "2025-08-27 00:00:00",
+          "valid_start": "2025-08-27 00:00:00",
+          "valid_end": "2025-09-05 00:00:00",
+          "gap": 4
+        },
+        "weighted_nrmse_model_dynamic": 0.3525964303716792,
+        "weighted_nrmse_baseline_dynamic": 0.38032315347498447,
+        "weighted_nrmse_model_fixed": 0.37199686304110563,
+        "weighted_nrmse_baseline_fixed": 0.40074863059740523,
+        "per_point_nrmse_model_dynamic": {
+          "A": 0.32339101463383935,
+          "B": 0.40921920836994113,
+          "C": 0.3713388771022641,
+          "D": 0.3011183224443788,
+          "E": 0.32813308293048754,
+          "F": 0.3513025204574556,
+          "G": 0.36859894171761887
+        },
+        "per_point_nrmse_baseline_dynamic": {
+          "A": 0.37959744778320803,
+          "B": 0.4779712060670614,
+          "C": 0.41647482272588593,
+          "D": 0.28939243733457226,
+          "E": 0.29494222502974954,
+          "F": 0.3600818940698105,
+          "G": 0.41704209694600847
+        },
+        "per_point_nrmse_model_fixed": {
+          "A": 0.2895836019493038,
+          "B": 0.45839218860176695,
+          "C": 0.3838513827437534,
+          "D": 0.34039462537190646,
+          "E": 0.3558069573945045,
+          "F": 0.3393939604419483,
+          "G": 0.4169053557318938
+        },
+        "per_point_nrmse_baseline_fixed": {
+          "A": 0.3399141944134947,
+          "B": 0.5354056279773599,
+          "C": 0.43050821349164947,
+          "D": 0.32713927698690776,
+          "E": 0.3198168705141862,
+          "F": 0.34787572816913864,
+          "G": 0.4716971865742604
+        }
+      }
+    ]
+  },
+  "baseline_dynamic": {
+    "weighted_nrmse_mean": 0.41645838085151504,
+    "model_minus_baseline": -0.039071395662788166
+  },
+  "baseline_fixed": {
+    "weighted_nrmse_mean": 0.4394535363844818,
+    "model_minus_baseline": -0.040903358885925944
+  },
+  "notes": {
+    "winsorization": {
+      "qlow": 0.02,
+      "qhi": 0.98
+    },
+    "feature_pruning": {
+      "drop_constants": true,
+      "corr_drop_thr": 0.995,
+      "select_top_numeric": 999,
+      "always_keep_patterns": [
+        "Axis-X_Upper_Point",
+        "Axis-Z_Upper_Point",
+        "Axis-Z_Lower_Point",
+        "Gun1_Voltage",
+        "Gun2_Voltage",
+        "Gun1_Powder",
+        "Gun2_Powder",
+        "Time_Index"
+      ]
+    },
+    "engineered": {
+      "used": true,
+      "created": [
+        "FE_A_Total_Powder",
+        "FE_A_Total_Voltage",
+        "FE_B_Total_Powder",
+        "FE_B_Total_Voltage",
+        "FE_C_Total_Powder",
+        "FE_C_Total_Voltage",
+        "FE_D_Total_Powder",
+        "FE_D_Total_Voltage",
+        "FE_E_Total_Powder",
+        "FE_E_Total_Voltage",
+        "FE_F_Total_Powder",
+        "FE_F_Total_Voltage",
+        "FE_All_Total_Powder",
+        "FE_All_Total_Voltage",
+        "FE_Time_Index"
+      ],
+      "use_time_index": true,
+      "use_exposures": false,
+      "expo_speed_floor_q": 0.2,
+      "expo_clip_qhi": 0.995,
+      "expo_use_log": true
+    },
+    "target_scaling": {
+      "enabled": false,
+      "scales": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "catboost_params": {
+      "iterations": 7000,
+      "learning_rate": 0.05,
+      "depth": 5,
+      "l2_leaf_reg": 6.2,
+      "random_strength": 1.25,
+      "bagging_temperature": 0.75,
+      "rsm": 0.8,
+      "od_wait": 250
+    },
+    "specs": {
+      "dynamic_specs_used": true,
+      "fixed_specs_path": "..\\models\\fixed_specs.json",
+      "fixed_specs_created_new": false
+    },
+    "artifact_uri": "file://C:\\Users\\OLJ1SGH\\Desktop\\Dev\\Opti_param\\opti_param_ai\\models\\catboost_multi.cbm"
+  }
+}

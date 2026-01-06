@@ -1,0 +1,88 @@
+{
+  "model_version": "v1.2",
+  "type_filter": null,
+  "rows": {
+    "total": 525
+  },
+  "features": {
+    "total": 20,
+    "numeric": 19,
+    "categorical": 1
+  },
+  "metrics": {
+    "Thickness Point A": {
+      "RMSE": 34.69500509296832,
+      "MAE": 12.626619452114761,
+      "n_val": 87
+    },
+    "Thickness Point B": {
+      "RMSE": 38.53586993740882,
+      "MAE": 16.499061735306665,
+      "n_val": 87
+    },
+    "Thickness Point C": {
+      "RMSE": 18.342966889434514,
+      "MAE": 15.002843848919046,
+      "n_val": 87
+    },
+    "Thickness Point D": {
+      "RMSE": 12.274333989592195,
+      "MAE": 10.61839558568494,
+      "n_val": 87
+    },
+    "Thickness Point E": {
+      "RMSE": 13.081477412321998,
+      "MAE": 10.599392223138917,
+      "n_val": 87
+    },
+    "Thickness Point F": {
+      "RMSE": 16.48570611875958,
+      "MAE": 13.734219837407958,
+      "n_val": 87
+    },
+    "Thickness Point G": {
+      "RMSE": 38.235916346341064,
+      "MAE": 15.880978281306124,
+      "n_val": 87
+    }
+  },
+  "weighted_nrmse": {
+    "value": 0.743692213725629,
+    "per_point": {
+      "A": 0.9723936404979909,
+      "B": 1.3080743359609235,
+      "C": 0.3987601497703155,
+      "D": 0.5336666951996605,
+      "E": 0.3940204039856024,
+      "F": 0.46569791295930985,
+      "G": 1.0893423460496032
+    },
+    "accept_threshold": 0.15,
+    "accepted": false
+  },
+  "cv": {
+    "used": true,
+    "method": "timeseries",
+    "n_splits": 5
+  },
+  "tuning": {
+    "used": false
+  },
+  "notes": {
+    "feature_pruning": {
+      "drop_near_constant": true,
+      "corr_drop_thr": 0.98,
+      "select_top_numeric": 60
+    },
+    "monotonic_constraints": {
+      "used": false,
+      "pos_keywords": [
+        "Voltage",
+        "Powder"
+      ],
+      "neg_keywords": [
+        "Speed"
+      ]
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "model_version": "v1.3",
+  "type_filter": null,
+  "rows": {
+    "total": 1586
+  },
+  "features": {
+    "total": 47,
+    "numeric": 46,
+    "categorical": 1
+  },
+  "metrics": {
+    "Thickness Point A": {
+      "RMSE": 11.104970947209088,
+      "MAE": 8.757244347723244,
+      "n_val": 396
+    },
+    "Thickness Point B": {
+      "RMSE": 14.23647277185613,
+      "MAE": 10.63991141990379,
+      "n_val": 396
+    },
+    "Thickness Point C": {
+      "RMSE": 18.352023522407638,
+      "MAE": 13.883819401545153,
+      "n_val": 396
+    },
+    "Thickness Point D": {
+      "RMSE": 12.601886953898173,
+      "MAE": 10.722435068201136,
+      "n_val": 396
+    },
+    "Thickness Point E": {
+      "RMSE": 16.196036852264783,
+      "MAE": 13.235698374224834,
+      "n_val": 396
+    },
+    "Thickness Point F": {
+      "RMSE": 13.5127627791694,
+      "MAE": 10.903123034852923,
+      "n_val": 396
+    },
+    "Thickness Point G": {
+      "RMSE": 17.031853724172265,
+      "MAE": 13.511995851150667,
+      "n_val": 396
+    }
+  },
+  "weighted_nrmse": {
+    "value": 0.42706330057413616,
+    "per_point": {
+      "A": 0.3536614951340473,
+      "B": 0.4498095662513785,
+      "C": 0.410101084299612,
+      "D": 0.48468795976531426,
+      "E": 0.4461718141119773,
+      "F": 0.42227383684904374,
+      "G": 0.4215805377270363
+    },
+    "accept_threshold": 0.15,
+    "accepted": false
+  },
+  "cv": {
+    "used": true,
+    "method": "timeseries",
+    "n_splits": 3,
+    "gap": 4,
+    "folds": [
+      {
+        "fold": 1,
+        "info": {
+          "train_rows": 394,
+          "valid_rows": 396,
+          "train_start": "2025-06-13 00:00:00",
+          "train_end": "2025-08-12 00:00:00",
+          "valid_start": "2025-08-12 00:00:00",
+          "valid_end": "2025-08-27 00:00:00",
+          "gap": 4
+        },
+        "weighted_nrmse_model": 0.5024513549722964,
+        "weighted_nrmse_baseline": 0.46948120516866604,
+        "per_point_nrmse_model": {
+          "A": 0.3475250058189391,
+          "B": 0.5145074729389749,
+          "C": 0.5138360570326223,
+          "D": 0.6054401582000906,
+          "E": 0.5829153471996007,
+          "F": 0.5114514352175262,
+          "G": 0.4367958443929208
+        },
+        "per_point_nrmse_baseline": {
+          "A": 0.3878910888245172,
+          "B": 0.4999872021832034,
+          "C": 0.5018997628120578,
+          "D": 0.53837134331727,
+          "E": 0.457022881677146,
+          "F": 0.41809455855802924,
+          "G": 0.47051668787685363
+        }
+      },
+      {
+        "fold": 2,
+        "info": {
+          "train_rows": 790,
+          "valid_rows": 396,
+          "train_start": "2025-06-13 00:00:00",
+          "train_end": "2025-08-27 00:00:00",
+          "valid_start": "2025-08-27 00:00:00",
+          "valid_end": "2025-09-10 00:00:00",
+          "gap": 4
+        },
+        "weighted_nrmse_model": 0.40266641442782725,
+        "weighted_nrmse_baseline": 0.3831098922468878,
+        "per_point_nrmse_model": {
+          "A": 0.3683184188490854,
+          "B": 0.44335385428379886,
+          "C": 0.38336913804749306,
+          "D": 0.4329819738159483,
+          "E": 0.4136524013527726,
+          "F": 0.41583084332867176,
+          "G": 0.3568802386218934
+        },
+        "per_point_nrmse_baseline": {
+          "A": 0.3946623074854812,
+          "B": 0.47082025031751207,
+          "C": 0.41088428110187314,
+          "D": 0.29156578854363313,
+          "E": 0.3285986308198879,
+          "F": 0.3771808625235078,
+          "G": 0.3849601755511974
+        }
+      },
+      {
+        "fold": 3,
+        "info": {
+          "train_rows": 1186,
+          "valid_rows": 396,
+          "train_start": "2025-06-13 00:00:00",
+          "train_end": "2025-09-10 00:00:00",
+          "valid_start": "2025-09-10 00:00:00",
+          "valid_end": "2025-10-20 00:00:00",
+          "gap": 4
+        },
+        "weighted_nrmse_model": 0.37607213232228476,
+        "weighted_nrmse_baseline": 0.3723566846327435,
+        "per_point_nrmse_model": {
+          "A": 0.3451410607341174,
+          "B": 0.3915673715313617,
+          "C": 0.3330980578187207,
+          "D": 0.41564174727990405,
+          "E": 0.34194769378355866,
+          "F": 0.33953923200093317,
+          "G": 0.4710655301662946
+        },
+        "per_point_nrmse_baseline": {
+          "A": 0.3630734441667445,
+          "B": 0.39026152323176544,
+          "C": 0.3326121885365126,
+          "D": 0.3718149660995369,
+          "E": 0.40249698831617486,
+          "F": 0.31064180809859226,
+          "G": 0.4399638054793199
+        }
+      }
+    ]
+  },
+  "baseline": {
+    "weighted_nrmse_mean": 0.4083159273494325,
+    "model_minus_baseline": 0.018747373224703656
+  },
+  "tuning": {
+    "used": false
+  },
+  "notes": {
+    "feature_pruning": {
+      "drop_constants": true,
+      "corr_drop_thr": 0.995,
+      "select_top_numeric": 999,
+      "always_keep_patterns": [
+        "Axis-X_Upper_Point",
+        "Axis-Z_Upper_Point",
+        "Axis-Z_Lower_Point",
+        "Gun1_Voltage",
+        "Gun2_Voltage",
+        "Gun1_Powder",
+        "Gun2_Powder",
+        "Time_Index"
+      ]
+    },
+    "monotonic_constraints": {
+      "used": false,
+      "pos_keywords": [
+        "Voltage",
+        "Powder",
+        "total_powder",
+        "total_voltage",
+        "exposure"
+      ],
+      "neg_keywords": [
+        "Speed"
+      ]
+    },
+    "winsorization": {
+      "qlow": 0.02,
+      "qhi": 0.98
+    },
+    "engineered": {
+      "used": true,
+      "created": [
+        "FE_A_Total_Powder",
+        "FE_A_Total_Voltage",
+        "FE_B_Total_Powder",
+        "FE_B_Total_Voltage",
+        "FE_C_Total_Powder",
+        "FE_C_Total_Voltage",
+        "FE_D_Total_Powder",
+        "FE_D_Total_Voltage",
+        "FE_E_Total_Powder",
+        "FE_E_Total_Voltage",
+        "FE_F_Total_Powder",
+        "FE_F_Total_Voltage",
+        "FE_All_Total_Powder",
+        "FE_All_Total_Voltage",
+        "FE_Time_Index"
+      ],
+      "use_time_index": true
+    },
+    "objective": "reg:squarederror"
+  }
+}

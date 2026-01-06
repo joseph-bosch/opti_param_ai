@@ -1,0 +1,52 @@
+{
+  "numeric_cols": [
+    "Rec_C_Axis-Z_Lower_Point",
+    "Rec_C_Axis-Z_Speed",
+    "Rec_C_Gun1_Powder",
+    "Rec_E_Gun1_Voltage",
+    "Temperature",
+    "Rec_E_Axis-Z_Lower_Point",
+    "Rec_A_Axis-X_Upper_Point",
+    "Rec_D_Axis-Z_Lower_Point",
+    "Rec_A_Gun1_Powder",
+    "Rec_D_Gun2_Voltage",
+    "Rec_D_Gun1_Voltage",
+    "Rec_C_Axis-Z_Upper_Point",
+    "Rec_C_Gun1_Voltage",
+    "Rec_B_Gun1_Powder",
+    "Rec_E_Axis-X_Upper_Point",
+    "Rec_C_Gun2_Voltage",
+    "Valve_Filter_Status",
+    "Rec_E_Gun1_Powder",
+    "Rec_F_Gun1_Powder",
+    "Rec_F_Axis-Z_Upper_Point",
+    "Humidity"
+  ],
+  "categorical_cols": [
+    "Type"
+  ],
+  "all_feature_cols": [
+    "Rec_C_Axis-Z_Lower_Point",
+    "Rec_C_Axis-Z_Speed",
+    "Rec_C_Gun1_Powder",
+    "Rec_E_Gun1_Voltage",
+    "Temperature",
+    "Rec_E_Axis-Z_Lower_Point",
+    "Rec_A_Axis-X_Upper_Point",
+    "Rec_D_Axis-Z_Lower_Point",
+    "Rec_A_Gun1_Powder",
+    "Rec_D_Gun2_Voltage",
+    "Rec_D_Gun1_Voltage",
+    "Rec_C_Axis-Z_Upper_Point",
+    "Rec_C_Gun1_Voltage",
+    "Rec_B_Gun1_Powder",
+    "Rec_E_Axis-X_Upper_Point",
+    "Rec_C_Gun2_Voltage",
+    "Valve_Filter_Status",
+    "Rec_E_Gun1_Powder",
+    "Rec_F_Gun1_Powder",
+    "Rec_F_Axis-Z_Upper_Point",
+    "Humidity",
+    "Type"
+  ]
+}
