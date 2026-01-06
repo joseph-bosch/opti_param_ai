@@ -1,4 +1,3 @@
-# optimizer_service.py
 """
 Optimizer service for recommending machine parameters.
 
