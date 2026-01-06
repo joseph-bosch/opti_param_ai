@@ -27,7 +27,7 @@ OPTI_PARAM_AI/
 │     └─ requirements.lock.txt      # (Optional) locked versions
 │
 ├─ frontend/
-│  ├─ History/                      # UI history/snapshots (optional)
+│  ├─ History/                      # UI history
 │  └─ optiparam-ui/                 # Vite + React + TS app
 │     ├─ public/
 │     ├─ src/
@@ -41,10 +41,10 @@ OPTI_PARAM_AI/
 │     ├─ index.html
 │     ├─ package.json
 │     ├─ package-lock.json
-│     ├─ README.md                  # UI-specific notes (optional)
+│     ├─ README.md                
 │     ├─ tsconfig*.json
 │     └─ vite.config.ts
-│  └─ requirements.txt              # (If present: doc-only; node deps are in package.json)
+│  └─ requirements.txt             
 │
 ├─ models/                           # Deployed models & artifacts
 │  ├─ preprocessor.joblib
@@ -53,23 +53,22 @@ OPTI_PARAM_AI/
 │  ├─ lgb_Thickness_Point_A.joblib  # etc. per algorithm & point
 │  └─ stack_meta_*.joblib
 │
-├─ sql/                              # DB schema/migrations/queries (if used)
+├─ sql/                              # DB schema/migrations/queries
 │
 ├─ training/
 │  ├─ __pycache__/
-│  ├─ _lmodels/                      # Legacy model dumps (if any)
 │  ├─ catboost_info/                 # CatBoost runtime folder
-│  ├─ History/                       # Study logs/checkpoints (optional)
+│  ├─ History/                       # Study logs/checkpoints 
 │  ├─ models/                        # Training outputs (intermediate)
-│  ├─ models_v3/                     # Another versioned output
-│  ├─ trainEnv1/                     # Python venv folder (local training environment)
-│  ├─ .env                           # Training-specific env
-│  ├─ Data_1.xlsx                    # Sample/raw training data
+│  ├─ models_v3/                    
+│  ├─ trainEnv1/                     # venv folder (local training environment)
+│  ├─ .env                           # Training-specific env file
+│  ├─ Data_1.xlsx                    # cleaned training data
+│  ├─ train_xgb.py                      # Standalone training script (legacy)
+│  ├─ utils.py                          # Shared helpers used by training
 │  └─ requirements.txt               # Training python deps
 │
-├─ optiEnv1/                         # Another venv (project environment)
-├─ train_xgb.py                      # Standalone training script (legacy)
-├─ utils.py                          # Shared helpers used by training
+├─ optiEnv1/                         # global venv (project environment)
 ├─ requirements.txt                  # (Repo-level note file if used)
 └─ .gitignore
 ```
@@ -359,4 +358,5 @@ K) Contributing
 - Update API contracts in `api_schemas.py` and UI types accordingly.
 - Keep training utilities centralized in `utils.py`.
 - Document new env vars in this README.
+
 
